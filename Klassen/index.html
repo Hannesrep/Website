@@ -1,0 +1,521 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Begr%C3%BC%C3%9Fung/">
+      
+      
+        <link rel="next" href="../blog/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Klassen - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Klassen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hallo Reisende
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Begr%C3%BC%C3%9Fung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Begrüßung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Klassen
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Klassen</h1>
+
+<p>In diesem Kapitel werden euch die verfügbaren Klassen von eurem professionellem Spielleiter vorgestellt. </p>
+<p><strong>Seer</strong> 
+    Der Seer (Seher) ist eine mystische Klasse, die niemals zu unterschätzen ist. Mit ihrem spirituellen Blick enthüllen Seher verborgene Wahrheiten. Ihre Fähigkeiten erlauben es ihnen, Illusionen zu weben und das Schlachtfeld aus sicherer Entfernung unsicher zu machen. Dennoch sind sie auch im Nahkampf nicht zu unterschätzen und ein Kampf mit Ihnen sollte nur unter ausreichender Vorbereitung begonnen werden, da es sonst schnell das letzte ist was man tut. </p>
+<p><strong>Marauder</strong>
+    Der Marauder (Plünderer) ist eine diebische Elster, die blitzschnell und sehr geschickt agiert. Er besitzt nicht nur die Möglichkeit die Taschen seiner Opfer zu erleichtern, sondern, wenn praktiziert bis zum Maximum, sind auch Spirituelle (magische) und kognitive Fähigkeiten teil seiner Beute. Ein Marauder mag auf den ersten Blick nicht der angsteinflößendste Gegner sein, doch pass auf, dass dir nicht alles gestohlen wird, was dir je wichtig war.</p>
+<p><strong>Spectator</strong>
+    Der Spectator (Beobachter) ist ein stiller Beobachter, der mit einer außergewöhnlichen Aufmerksamkeit die Schicksäle der Wesen um ihn herum beobachtet. Es ist fast unmöglich einen Spectator zu täuschen, nicht einmal deine wertvollsten Geheimnisse sind vor ihm sicher.
+    Ein Spectator mag sich oft aus den meisten Konfrontationen heraushalten, aber wenn es darauf ankommt, beherrscht er die Psyche seiner Feinde. Sei immer auf der Hut vor dem Spectator, da du nicht mal weißt, ob er gerade neben dir steht.</p>
+<p><strong>Bard</strong>
+    Der Bard (Barde) ist die Einstiegssequenz des Sonnenpfades. Dieser Pfad verleiht Fähigkeiten, die mit Licht, Feuer und heiliger Magie verbunden sind. Außerdem sind sie Experten wenn es um das reinigen und exorzieren bösartiger Feinde geht. Barden sind starke Teamplayer und könne ihre Freunde buffen, ihren Feinden gegenüber sind sie gnadenlos. Wunder dich also nicht, wenn ein Barde dich plötzlich mit heiliger Magie säubert.</p>
+<p><strong>Sailor</strong>
+    Der Sailor (Seefahrer) ist ein Tyrann, der über die Meere herrscht. Er fühlt sich in aquatischen Regionen wohl und ist dort auch nur schwer zu besiegen. Auf dem Schlachtfeld brilliert er mit rasenden Schlägen, die vor niemandem halt machen. Durch seine, auf See erworbenen Navigationsfähigkeit, ist er immer in der Lage sich zu orientieren. Pass lieber auf, dass du einen Sailor nicht zu sehr reizt, denn er mag zwar, wie der Ozean, auf den ersten Blick ruhig erscheinen, doch können auch kleine Beben einen unaufhaltsamen Tsunami auslösen.</p>
+<p><strong>Corpse Collector</strong>
+    Der Corpse Collector (Leichensammler) ist ein düsterer, nekromantischer Pfad, der nur von den mutigsten bestritten werden kann. Ein Corpse Collector gewinnt seine Stärke aus den Überresten der Verstorbenen und der Geister. Seine makabren Fähigkeiten machen ihn zu einem unheimlichen Manipulator des Todes - er verbündet sich oder versklavt die Geister der Verstorbenen und kann mit ihnen kommunizieren. Merk dir, halte dich von der düster wirkenden Gestalt fern, sonst spielt er mit deinem noch warmen Leichnam.</p>
+<p><strong>Warrior</strong>
+    Der Warrior (Krieger) nutzt seine gewaltige körperliche Kraft, um seine Feinde niederzumachen. Ein Warrior wird immer an der Speerspitze eines Angriffs stehen und die Aufmerksamkeit des Feindes auf sich ziehen. Mit seinen besonderen Fähigkeiten, die es ihm erlauben jegliche Waffen geübt zu führen, macht er jedem Gegner die Hölle heiß. Diese Art von Krieger wünscht sich jede Seite, aber niemals der anderen. Einen Krieger alleine kannst du vielleicht aufhalten, aber wenn er von einem fähigen Team unterstützt wird, überrollt er jegliche Art von Befestigung wie eine Dampflock und da helfen auch keine Vorbereitungen.</p>
+<p><strong>Assassin</strong>
+    Der Assassine (Assassine) widmet sich der Kunst des lautlosen Tötens und der Heimlichkeit. Ein Assassine hat die Fähigkeit, sich unauffällig zu bewegen und die Ziele präzise aus dem Schatten heraus zu eliminieren. Dafür ist ihm nichts zu schade, Gift, Illusionen, Charm sind nur einige der Möglichkeiten, die ein Assassine beherrscht. Wenn dein Feind ein Assassine ist, wird das letzte was du siehst, dein blutender Hals sein, bevor alles schwarz wird.</p>
+<p><strong>Hunter</strong>
+    Der Hunter (Jäger) verkörpert die Essenz des Jägers, schnell, clever, kraftvoll, ausdauernd.
+    Ein ausgebildeter Hunter ist eine Gefahr die ernst genommen werden muss. Er beherrscht das Fallen legen sowohl auf der physischen als auch auf einer geistlichen Ebene. Mit seinem cleveren Verstand bleibt keine Beute verschont, sie wird in Fallen gelockt und durch kräftige Schläge, schnelle Tritte und präzisen Waffeneinsatz in die Knie gezwungen. Hat der Hunter einmal ein Ziel ausgesucht, kann er Tagelang auf der Lauer liegen, bis seine Falle zuschnappt.
+    Wenn du dich mit einem Hunter anlegst, beachte, dass du es schnell zu Ende bringst, oder keine Informationen über dich Preis gibst, sonst endest du bloß als eine weitere Jagdtrophäe an seiner Wand.</p>
+<p><strong>Mystery Pryer</strong>
+    Der Mystery Pryer (Mysterien Aufdecker) ist ein ungewöhnlicher Pfad, der sich ganz dem Aufdecken und Manipulieren verborgener Geheimnisse widmet. Um dem Geheimnisvollen auf die Spur zu kommen müssen sie stark genug sein, um jeglichen Gefahren zu trotzen. Ein Mystery Pryer besitzt sowohl Fähigkeiten für den Nahkampf als auch für eine magische Konfrontation. Das wichtigste für einen Mystery Pryer ist es, sich auf einen bevorstehenden Kampf gut vorzubereiten. Solltest du dich jemals in einen Kampf mit einem Mystery Pryer verwickeln, dann bete, dass er nicht auf dich vorbereitet war.</p>
+<p><strong>Planter</strong>
+    Der Planter (Pflanzer) ist der Weg derer die mit der Natur vertraut sind. Anhänger dieses Pfades können klimatische Veränderungen vorhersehen und ihr Wissen nutzen um Verbündete zu heilen. Trotz ihres grünen Daumens, ihrer heilenden Hände, sollten sie nicht unterschätzt werden, denn sonst benutzten sie ihre starken Arme um ihre Gegner fertig zu machen. Sollte das nicht reichen um dich umzubringen, werden sie ihre wahrlich magischen Fähigkeiten einsetzten und dich in eine grüne Hölle zu schicken.</p>
+<p><strong>Apothecary</strong>
+    Der Apothecary (Apotheker) widmet sich der Alchemie und Pharmazie. Er kann Krankheiten und Verletzungen heilen, diverse Tränke herstellen, die alle unterschiedliche Fähigkeiten haben. Einige machen ihn zu einem Achilles auf dem Schlachtfeld, einem Assassinen der die Dunkelheit beherrscht oder zum Nemesis der Untoten, um nur einige Beispiele zu nennen. 
+    Wie auch beim Mystery Pryer gilt, ein auf dich vorbereiteter Apothecary wird dir mehr als nur leichte Albträume verschaffen.</p>
+<p><strong>Prisoner</strong>
+    Der Prisoner (Gefangener) kennt sich mit jeglichen kriminellem Wissen aus. Von leichter Brandstiftung, Schlösser knacken, bis hin zu Entführungen und Morden. Prisoner besitzen außerdem die Fähigkeit für kurze Zeit mit explosiver Kraft ihre Feinde niederzumähen. Lege dich also besser nicht mit einem Prisoner an, denn nur eines ist gewiss, einer von euch beiden wird sterben und Spoiler es ist nicht der Prisoner.</p>
+<p><strong>Arbiter</strong>
+    Der Arbiter (Gebieter) besitz eine Autorität, der sich kein Normalsterblicher widersetzen kann. Er verfolgt seine Gerechtigkeit und andere müssen sich ihm fügen, sollte es zu Widerständen kommen, dann werden diese mit purer Gewalt klein gehalten.  Was der Arbiter anordnet, das wird auch geschehen, ansonsten folgen schlimme Konsequenzen. Merke dir, widersetze dich niemals den Verordnungen des Arbiter, sonst wird der Tod wie eine Erlösung wirken.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
